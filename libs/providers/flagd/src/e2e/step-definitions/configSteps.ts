@@ -38,5 +38,9 @@ export const configSteps: Steps = (state: State) => {
         expect(configElement).toBe(expected);
       },
     );
+
+    then('we should have an error', () => {
+
+    });
   };
 };

@@ -64,15 +64,4 @@ export const flagSteps: Steps =
     then(/^the variant should be "(.*)"$/, (arg0) => {
       expect(state.details?.variant).toBe(arg0);
     });
-    when('the flag was modified', async () => {
-      await waitFor(
-        () =>
-          expect(
-            state.events.find(
-              (value) => value.type == 'change' && (value.details?.flagsChanged as string[]).includes(state.flag!.name),
-            ),
-          ).toBeDefined(),
-        { timeout: 5000 },
-      );
-    });
   };

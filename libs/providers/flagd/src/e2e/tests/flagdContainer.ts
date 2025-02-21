@@ -8,12 +8,13 @@ export class FlagdContainer extends GenericContainer {
   private started: StartedTestContainer | undefined;
   private stopped: StoppedTestContainer | undefined;
 
-  public static build(feature: string | undefined = undefined) {
-    return new FlagdContainer(this.generateImageName(feature)).withExposedPorts(8013, 8014, 8015, 8016);
+  public static build() {
+    return new FlagdContainer(this.generateImageName());
   }
 
   private constructor(image: string) {
     super(image);
+    this.withExposedPorts(8080, 8013, 8014, 8015, 8016);
   }
 
   isStarted(): boolean {
@@ -42,15 +43,15 @@ export class FlagdContainer extends GenericContainer {
     return containerPromise;
   }
 
-  private static generateImageName(feature: string | undefined): string {
+  getLaunchpadUrl() {
+    return this.started?.getHost() + ':' + this.started?.getMappedPort(8080);
+  }
+
+  private static generateImageName(): string {
     const image = this.imageBase;
     const file = path.join(__dirname, './../../../../../shared/flagd-core/test-harness/', 'version.txt');
     const version = fs.readFileSync(file, 'utf8').trim();
-    let featurePart = '';
-    if (feature) {
-      featurePart = `-${feature}`;
-    }
-    return `${image}${featurePart}:v${version}`;
+    return `${image}:v${version}`;
   }
 
   getPort(resolverType: ResolverType) {

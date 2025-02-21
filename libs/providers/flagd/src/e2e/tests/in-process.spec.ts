@@ -10,7 +10,7 @@ import { contextSteps } from '../step-definitions/contextSteps';
 const steps = [providerSteps, configSteps, eventSteps, flagSteps, contextSteps];
 
 jest.setTimeout(50000);
-describe('rpc', () => {
+describe('in-process', () => {
   const state: State = {
     resolverType: 'in-process',
     options: {},

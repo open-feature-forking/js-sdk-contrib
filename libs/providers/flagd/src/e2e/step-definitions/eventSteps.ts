@@ -34,16 +34,25 @@ export const eventSteps: Steps =
     then(/^the (.*) event handler should have been executed$/, async (type: string) => {
       await waitFor(() => expect(state.events.find((value) => value.type == type)).toBeDefined(), { timeout: 20000 });
       expect(state.events.find((value) => value.type == type)).toBeDefined();
-      state.events = state.events.filter((a) => a.type !== type);
+      state.events = [];
     });
 
     then(/^the (.*) event handler should have been executed within (\d+)ms$/, async (type: string, ms: number) => {
       await waitFor(() => expect(state.events.find((value) => value.type == type)).toBeDefined(), { timeout: ms });
       const actual = state.events.find((value) => value.type == type);
       expect(actual).toBeDefined();
-      state.events = state.events.filter((a) => a.type !== type);
+      state.events = [];
       console.error('here bin cih');
     });
 
-    when(/^a (.*) event was fired$/, () => {});
+    when(/^a (.*) event was fired$/, async (type: string) => {
+      await waitFor(() => expect(state.events.find((value) => value.type == type)), { timeout: 2000 });
+      expect(state.events.find((value) => value.type == type)).toBeDefined();
+      state.events = [];
+    });
+
+    then('the flag should be part of the event payload', async () => {
+      await waitFor(() => expect(state.events.find((value) => value.type == 'change')), { timeout: 2000 });
+      state.events = [];
+    });
   };

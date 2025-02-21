@@ -20,7 +20,8 @@ describe('rpc', () => {
   };
   autoBindSteps(
     loadFeatures(GHERKIN_FLAGD, {
-      tagFilter: '@rpc and not @targetURI and not @customCert and not @events and not @sync  and not @offline and not @grace',
+      tagFilter:
+        '@rpc and not @targetURI and not @customCert and not @events and not @stream and not @grace',
       scenarioNameTemplate: (vars) => {
         return `${vars.scenarioTitle} (${vars.scenarioTags.join(',')} ${vars.featureTags.join(',')})`;
       },
