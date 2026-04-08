@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.2.10](https://github.com/open-feature-forking/js-sdk-contrib/compare/go-feature-flag-web-provider-v0.2.9...go-feature-flag-web-provider-v0.2.10) (2026-04-08)
+
+
+### 🐛 Bug Fixes
+
+* **go-feature-flag-web:** avoid infinite loop in waitWebsocketFinalSt… ([#1104](https://github.com/open-feature-forking/js-sdk-contrib/issues/1104)) ([2cc7483](https://github.com/open-feature-forking/js-sdk-contrib/commit/2cc7483ea0f8d178d5abfacfdce804db83704ba7))
+* **go-feature-flag-web:** Set API Key in headers ([#1030](https://github.com/open-feature-forking/js-sdk-contrib/issues/1030)) ([31a8adb](https://github.com/open-feature-forking/js-sdk-contrib/commit/31a8adbedbdf655a87593f7dd87e611f64f4a8b1))
+* **go-feature-flag:** Support endpoint paths in data collector goff-api.ts ([#1184](https://github.com/open-feature-forking/js-sdk-contrib/issues/1184)) ([928e437](https://github.com/open-feature-forking/js-sdk-contrib/commit/928e43764a9d8a4891c07aba7deb1990d52fc29c))
+* **GOFF:** Adding missing exports for GO Feature Flag Web Provider ([#1418](https://github.com/open-feature-forking/js-sdk-contrib/issues/1418)) ([e9e5e2b](https://github.com/open-feature-forking/js-sdk-contrib/commit/e9e5e2b948e3897f68e66aae6c9fc905bd12f5ee))
+
+
+### ✨ New Features
+
+* Add optional custom headers (GoFeatureFlag) ([#1465](https://github.com/open-feature-forking/js-sdk-contrib/issues/1465)) ([23a2363](https://github.com/open-feature-forking/js-sdk-contrib/commit/23a236335a8981c54ccc934fd868f934abbbce03))
+* **go-feature-flag-web:** Add support for data collection ([#1101](https://github.com/open-feature-forking/js-sdk-contrib/issues/1101)) ([34fcecd](https://github.com/open-feature-forking/js-sdk-contrib/commit/34fcecd78b9cb11b9dbc51d44a345fc24e94f91d))
+* **go-feature-flag:** Support exporter metadata in web and server providers ([#1183](https://github.com/open-feature-forking/js-sdk-contrib/issues/1183)) ([0edf3f5](https://github.com/open-feature-forking/js-sdk-contrib/commit/0edf3f55161878684ffe809fbde8ad6fa379c4b0))
+* **goff web:** Support tracking events ([#1268](https://github.com/open-feature-forking/js-sdk-contrib/issues/1268)) ([d9ffcec](https://github.com/open-feature-forking/js-sdk-contrib/commit/d9ffcec1652aa96eefccc45dfe079ca126d55142))
+* Update GoFeatureFlagWebProvider to support API Key changes at runtime ([#1499](https://github.com/open-feature-forking/js-sdk-contrib/issues/1499)) ([f246300](https://github.com/open-feature-forking/js-sdk-contrib/commit/f2463008e69d7b308be38b39d2eea165d70cd372))
+
 ## [0.2.9](https://github.com/open-feature/js-sdk-contrib/compare/go-feature-flag-web-provider-v0.2.8...go-feature-flag-web-provider-v0.2.9) (2026-03-23)
 
 
