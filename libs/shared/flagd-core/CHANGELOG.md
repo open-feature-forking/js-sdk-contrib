@@ -1,5 +1,38 @@
 # Changelog
 
+## [3.0.0](https://github.com/open-feature-forking/js-sdk-contrib/compare/flagd-core-v2.0.0...flagd-core-v3.0.0) (2026-04-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* graceful fallback to code default ([#1461](https://github.com/open-feature-forking/js-sdk-contrib/issues/1461))
+* improve eval performance, restructure lib, support flag metadata ([#1120](https://github.com/open-feature-forking/js-sdk-contrib/issues/1120))
+
+### 🐛 Bug Fixes
+
+* **flagd-core:** use injected logger ([#1057](https://github.com/open-feature-forking/js-sdk-contrib/issues/1057)) ([4e21b83](https://github.com/open-feature-forking/js-sdk-contrib/commit/4e21b836b62b6f26ee966c8f0ff6fd876a3e353a))
+* **flagd:** improve targeting key check in fractional operator ([#1048](https://github.com/open-feature-forking/js-sdk-contrib/issues/1048)) ([7d82649](https://github.com/open-feature-forking/js-sdk-contrib/commit/7d8264994b62f00d2f3e6b88e98ecf2c85ea8b87))
+* grpc not retrying UNAVAILABLE/UNKNOWN, e2e test stability ([#1457](https://github.com/open-feature-forking/js-sdk-contrib/issues/1457)) ([7213189](https://github.com/open-feature-forking/js-sdk-contrib/commit/72131894982441381d745ba184fbe53ae8041dde))
+* **security:** update vulnerability-updates ([#1342](https://github.com/open-feature-forking/js-sdk-contrib/issues/1342)) ([fca83c9](https://github.com/open-feature-forking/js-sdk-contrib/commit/fca83c925c6a3d19bac9d647562fd534397b376b))
+* stream stability when connecting (wait4Ready) ([#1458](https://github.com/open-feature-forking/js-sdk-contrib/issues/1458)) ([ca3c16a](https://github.com/open-feature-forking/js-sdk-contrib/commit/ca3c16a37b4a8b1089cc2634e53f4ff04013896b))
+* update json logic engine and schema ([#914](https://github.com/open-feature-forking/js-sdk-contrib/issues/914)) ([04f0dfd](https://github.com/open-feature-forking/js-sdk-contrib/commit/04f0dfd1427dbd529bd2d650dfa27f25e89f7e07))
+
+
+### ✨ New Features
+
+* Add  FLAGD_STREAM_DEADLINE_MS parameter ([#1430](https://github.com/open-feature-forking/js-sdk-contrib/issues/1430)) ([be6f2f9](https://github.com/open-feature-forking/js-sdk-contrib/commit/be6f2f914b0a3e529c8e92a970916d5158af3a8f))
+* Add FLAGD_SYNC_PORT support for in-process providers with backwards compatibility ([#1413](https://github.com/open-feature-forking/js-sdk-contrib/issues/1413)) ([8feffee](https://github.com/open-feature-forking/js-sdk-contrib/commit/8feffee5029e37b2d3c8b7f94b959587f836ddea))
+* add targeting validation/warning ([#878](https://github.com/open-feature-forking/js-sdk-contrib/issues/878)) ([2a4dbcf](https://github.com/open-feature-forking/js-sdk-contrib/commit/2a4dbcf0daa6b55e7cc73aa9b4a1fb481054e752))
+* Change fractional custom op from percentage-based to relative weighting. [#946](https://github.com/open-feature-forking/js-sdk-contrib/issues/946) ([#954](https://github.com/open-feature-forking/js-sdk-contrib/issues/954)) ([0e9bc84](https://github.com/open-feature-forking/js-sdk-contrib/commit/0e9bc842cf09de12e8445dcb4e0e8b3623c66099))
+* **flagd-core:** add bulk evaluation method ([#1010](https://github.com/open-feature-forking/js-sdk-contrib/issues/1010)) ([52aebed](https://github.com/open-feature-forking/js-sdk-contrib/commit/52aebedc0033ce273b707adcc57e80e765cc98e9))
+* **flagd-core:** add disableDynamicCodeGeneration option for edge runtime compatibility (2/2) ([#1482](https://github.com/open-feature-forking/js-sdk-contrib/issues/1482)) ([1a510d5](https://github.com/open-feature-forking/js-sdk-contrib/commit/1a510d55c6e61634fe3e4acf1aef3f9607fb25b2))
+* **flagd-core:** pre-compile AJV validators for edge runtime compatibility (1/2) ([#1481](https://github.com/open-feature-forking/js-sdk-contrib/issues/1481)) ([44dc9ab](https://github.com/open-feature-forking/js-sdk-contrib/commit/44dc9ab771dd0adfb78d85a69b4a982dba23d28a))
+* **flagd:** add flag metadata ([#1151](https://github.com/open-feature-forking/js-sdk-contrib/issues/1151)) ([b1c6d23](https://github.com/open-feature-forking/js-sdk-contrib/commit/b1c6d235565f6cce02519d7c08bb6ad2dd791332))
+* graceful fallback to code default ([#1461](https://github.com/open-feature-forking/js-sdk-contrib/issues/1461)) ([d314df9](https://github.com/open-feature-forking/js-sdk-contrib/commit/d314df90df26b7f7d5ae1e2a298e2cd4b844b288))
+* Implement retryGracePeriod param ([#1289](https://github.com/open-feature-forking/js-sdk-contrib/issues/1289)) ([#1445](https://github.com/open-feature-forking/js-sdk-contrib/issues/1445)) ([d8104fa](https://github.com/open-feature-forking/js-sdk-contrib/commit/d8104fa4fdc0d58708748a2c05cf94d90d89b1d7))
+* improve eval performance, restructure lib, support flag metadata ([#1120](https://github.com/open-feature-forking/js-sdk-contrib/issues/1120)) ([f1ed82a](https://github.com/open-feature-forking/js-sdk-contrib/commit/f1ed82acba4430ffafbe9057576371e09f1791ff))
+* support no default variant  ([#1354](https://github.com/open-feature-forking/js-sdk-contrib/issues/1354)) ([f2efa55](https://github.com/open-feature-forking/js-sdk-contrib/commit/f2efa559410751dfab80f1e749a86dc04703189c))
+
 ## [2.0.0](https://github.com/open-feature/js-sdk-contrib/compare/flagd-core-v1.3.0...flagd-core-v2.0.0) (2026-03-11)
 
 
