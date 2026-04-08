@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.3.0](https://github.com/open-feature-forking/js-sdk-contrib/compare/ofrep-provider-v0.2.3...ofrep-provider-v0.3.0) (2026-04-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* use native headers, optional query params ([#1003](https://github.com/open-feature-forking/js-sdk-contrib/issues/1003))
+
+### 🐛 Bug Fixes
+
+* use ofrep-core ^2.0.0 for ofrep providers ([#1411](https://github.com/open-feature-forking/js-sdk-contrib/issues/1411)) ([c105aa3](https://github.com/open-feature-forking/js-sdk-contrib/commit/c105aa3eb3b59b490c0fe7445f31e6e5e2a2f6ee))
+
+
+### ✨ New Features
+
+* Add support for environment variables for OFREP provider config… ([#1450](https://github.com/open-feature-forking/js-sdk-contrib/issues/1450)) ([19c82bd](https://github.com/open-feature-forking/js-sdk-contrib/commit/19c82bdbb2a4926ec7044e497bb7c4f75f210340))
+* implement OFREP code default ([#1396](https://github.com/open-feature-forking/js-sdk-contrib/issues/1396)) ([4dba624](https://github.com/open-feature-forking/js-sdk-contrib/commit/4dba6249a93be2bff5aa13baaf7c3b78d52ef715))
+* support metadata in errors in OFREP ([#1203](https://github.com/open-feature-forking/js-sdk-contrib/issues/1203)) ([ce37b6a](https://github.com/open-feature-forking/js-sdk-contrib/commit/ce37b6adcdc9fca0af386eece00c580542cf7b4b))
+* use native headers, optional query params ([#1003](https://github.com/open-feature-forking/js-sdk-contrib/issues/1003)) ([383f4f3](https://github.com/open-feature-forking/js-sdk-contrib/commit/383f4f310d0eeed8a72f73ed8a539aeab46e3177))
+
 ## [0.2.3](https://github.com/open-feature/js-sdk-contrib/compare/ofrep-provider-v0.2.2...ofrep-provider-v0.2.3) (2026-02-09)
 
 
