@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.8.0](https://github.com/open-feature-forking/js-sdk-contrib/compare/flagd-web-provider-v0.7.4...flagd-web-provider-v0.8.0) (2026-04-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* graceful fallback to code default ([#1461](https://github.com/open-feature-forking/js-sdk-contrib/issues/1461))
+
+### ✨ New Features
+
+* Add interceptors to flagd options. ([#894](https://github.com/open-feature-forking/js-sdk-contrib/issues/894)) ([878b7b6](https://github.com/open-feature-forking/js-sdk-contrib/commit/878b7b6e11853a8dcc2952e5767b7d275de72313))
+* Change fractional custom op from percentage-based to relative weighting. [#946](https://github.com/open-feature-forking/js-sdk-contrib/issues/946) ([#954](https://github.com/open-feature-forking/js-sdk-contrib/issues/954)) ([0e9bc84](https://github.com/open-feature-forking/js-sdk-contrib/commit/0e9bc842cf09de12e8445dcb4e0e8b3623c66099))
+* **flagd-core:** pre-compile AJV validators for edge runtime compatibility (1/2) ([#1481](https://github.com/open-feature-forking/js-sdk-contrib/issues/1481)) ([44dc9ab](https://github.com/open-feature-forking/js-sdk-contrib/commit/44dc9ab771dd0adfb78d85a69b4a982dba23d28a))
+* **flagd:** add flag metadata ([#1151](https://github.com/open-feature-forking/js-sdk-contrib/issues/1151)) ([b1c6d23](https://github.com/open-feature-forking/js-sdk-contrib/commit/b1c6d235565f6cce02519d7c08bb6ad2dd791332))
+* graceful fallback to code default ([#1461](https://github.com/open-feature-forking/js-sdk-contrib/issues/1461)) ([d314df9](https://github.com/open-feature-forking/js-sdk-contrib/commit/d314df90df26b7f7d5ae1e2a298e2cd4b844b288))
+* support no default variant  ([#1354](https://github.com/open-feature-forking/js-sdk-contrib/issues/1354)) ([f2efa55](https://github.com/open-feature-forking/js-sdk-contrib/commit/f2efa559410751dfab80f1e749a86dc04703189c))
+
 ## [0.7.4](https://github.com/open-feature/js-sdk-contrib/compare/flagd-web-provider-v0.7.3...flagd-web-provider-v0.7.4) (2026-02-12)
 
 
