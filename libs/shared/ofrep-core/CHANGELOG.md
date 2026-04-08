@@ -1,5 +1,33 @@
 # Changelog
 
+## [3.0.0](https://github.com/open-feature-forking/js-sdk-contrib/compare/ofrep-core-v2.0.0...ofrep-core-v3.0.0) (2026-04-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* release 2.0.0 ([#1409](https://github.com/open-feature-forking/js-sdk-contrib/issues/1409))
+* use native headers, optional query params ([#1003](https://github.com/open-feature-forking/js-sdk-contrib/issues/1003))
+
+### chore
+
+* release 2.0.0 ([#1409](https://github.com/open-feature-forking/js-sdk-contrib/issues/1409)) ([0546d3f](https://github.com/open-feature-forking/js-sdk-contrib/commit/0546d3f9c5d0ccf337635fd41a56d26cadad6929))
+
+
+### 🐛 Bug Fixes
+
+* improper inclusion of test deps ([#1220](https://github.com/open-feature-forking/js-sdk-contrib/issues/1220)) ([f5e3f1f](https://github.com/open-feature-forking/js-sdk-contrib/commit/f5e3f1f3ceff8d82c5f2de9b44414f79c442d602))
+* OFREP http set headers ([f0dcf93](https://github.com/open-feature-forking/js-sdk-contrib/commit/f0dcf93ce97d01b79854212919afe5eacd28c860))
+
+
+### ✨ New Features
+
+* implement OFREP code default ([#1396](https://github.com/open-feature-forking/js-sdk-contrib/issues/1396)) ([4dba624](https://github.com/open-feature-forking/js-sdk-contrib/commit/4dba6249a93be2bff5aa13baaf7c3b78d52ef715))
+* **ofrep-core:** add abort timeout to fetch call ([#1200](https://github.com/open-feature-forking/js-sdk-contrib/issues/1200)) ([d88c5fe](https://github.com/open-feature-forking/js-sdk-contrib/commit/d88c5fe11f676da796f1ff2b02cb7637d8720e5e))
+* **ofrep:** adding error details for 401, 403 and 429 ([#1361](https://github.com/open-feature-forking/js-sdk-contrib/issues/1361)) ([7db9221](https://github.com/open-feature-forking/js-sdk-contrib/commit/7db922122dc24e732e6b38742fa1d465dd8c13f7))
+* support metadata in errors in OFREP ([#1203](https://github.com/open-feature-forking/js-sdk-contrib/issues/1203)) ([ce37b6a](https://github.com/open-feature-forking/js-sdk-contrib/commit/ce37b6adcdc9fca0af386eece00c580542cf7b4b))
+* support relative baseUrls ([#950](https://github.com/open-feature-forking/js-sdk-contrib/issues/950)) ([ceb42cb](https://github.com/open-feature-forking/js-sdk-contrib/commit/ceb42cb335518963a3ca5d21f15f9b439c481f2f))
+* use native headers, optional query params ([#1003](https://github.com/open-feature-forking/js-sdk-contrib/issues/1003)) ([383f4f3](https://github.com/open-feature-forking/js-sdk-contrib/commit/383f4f310d0eeed8a72f73ed8a539aeab46e3177))
+
 ## [2.0.0](https://github.com/open-feature/js-sdk-contrib/compare/ofrep-core-v1.2.0...ofrep-core-v2.0.0) (2025-11-24)
 
 
